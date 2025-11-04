@@ -56,9 +56,14 @@ if (dogs) {
 const polarBears = document.getElementById("bearElem");
 const bearsSound = new Audio();
 bearsSound.src = "/sound/polarBears.mp3";
-
 if (polarBears) {
   polarBears.addEventListener("click", () => {
     bearsSound.play();
   });
 }
+
+const desert = document.getElementById("desertElem");
+desert.addEventListener("click", function () {
+  desert.classList.toggle("animate");
+  desert.classList.toggle("rotate");
+});
